@@ -10,8 +10,8 @@ int main()
     LARGE_INTEGER Render_StartingTime, Render_EndingTime;
     QueryPerformanceCounter(&Render_StartingTime);
 
-    //const std::string MODEL_PATH = "objs/cornell2/cornell-box.obj";
-    const std::string MODEL_PATH = "objs/quad/quad.obj";
+    const std::string MODEL_PATH = "objs/cornell2/cornell-box.obj";
+    //const std::string MODEL_PATH = "objs/quad/quad.obj";
 
     std::vector<triangle> tris;
     obj_parse(MODEL_PATH.c_str(), &tris);
